@@ -1,0 +1,15 @@
+<div class="layout-topbar">
+    <div class="layout-topbar-logo-container">
+        <button class="layout-menu-button layout-topbar-action" (click)="layoutService.onMenuToggle()">
+            <i class="pi pi-bars"></i>
+        </button>
+        <a class="layout-topbar-logo" routerLink="/">
+            <img src="assets/images/suva-logo-grau.svg" alt="Suva Logo" style="height: 30px" />
+        </a>
+    </div>
+
+    <div class="layout-topbar-actions">
+        <!-- Content projection: Parent component projects menu actions here -->
+        <ng-content></ng-content>
+    </div>
+</div>

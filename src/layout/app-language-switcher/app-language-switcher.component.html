@@ -1,0 +1,34 @@
+<div class="flex flex-col gap-2">
+    <span class="text-sm text-muted-color font-semibold">{{ 'menu.language' | translate }}</span>
+    <div class="flex items-center gap-2 pt-2">
+        <p-radioButton name="language" value="en" [(ngModel)]="selectedLanguage" inputId="langEnTop" (onClick)="onLanguageChange('en')"></p-radioButton>
+        <label for="langEnTop" class="text-sm">{{ 'language.english' | translate }}</label>
+    </div>
+    <div class="flex items-center gap-2">
+        <p-radioButton name="language" value="de" [(ngModel)]="selectedLanguage" inputId="langDeTop" (onClick)="onLanguageChange('de')"></p-radioButton>
+        <label for="langDeTop" class="text-sm">{{ 'language.german' | translate }}</label>
+    </div>
+    <div class="flex items-center gap-2">
+        <p-radioButton name="language" value="fr" [(ngModel)]="selectedLanguage" inputId="langFrTop" (onClick)="onLanguageChange('fr')"></p-radioButton>
+        <label for="langFrTop" class="text-sm">{{ 'language.french' | translate }}</label>
+    </div>
+    <div class="flex items-center gap-2">
+        <p-radioButton name="language" value="it" [(ngModel)]="selectedLanguage" inputId="langItTop" (onClick)="onLanguageChange('it')"></p-radioButton>
+        <label for="langItTop" class="text-sm">{{ 'language.italian' | translate }}</label>
+    </div>
+</div>
+<div class="flex flex-col gap-2 mt-4">
+    <span class="text-sm text-muted-color font-semibold">{{ 'menu.textSize.title' | translate }}</span>
+    <div class="flex items-center gap-2 pt-2">
+        <p-radioButton name="fontSize" value="0.875rem" [(ngModel)]="selectedFontSize" inputId="fontSizeSm" (onClick)="onFontSizeChange('0.875rem')"></p-radioButton>
+        <label for="fontSizeSm" class="text-sm">{{ 'menu.textSize.small' | translate }}</label>
+    </div>
+    <div class="flex items-center gap-2">
+        <p-radioButton name="fontSize" value="1rem" [(ngModel)]="selectedFontSize" inputId="fontSizeMd" (onClick)="onFontSizeChange('1rem')"></p-radioButton>
+        <label for="fontSizeMd" class="text-sm">{{ 'menu.textSize.medium' | translate }}</label>
+    </div>
+    <div class="flex items-center gap-2">
+        <p-radioButton name="fontSize" value="1.125rem" [(ngModel)]="selectedFontSize" inputId="fontSizeLg" (onClick)="onFontSizeChange('1.125rem')"></p-radioButton>
+        <label for="fontSizeLg" class="text-sm">{{ 'menu.textSize.large' | translate }}</label>
+    </div>
+</div>

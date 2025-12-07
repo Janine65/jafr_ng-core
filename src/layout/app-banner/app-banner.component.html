@@ -1,0 +1,28 @@
+<div *ngIf="bannerState().isVisible && bannerState().config" [class]="getBannerClasses()" [ngStyle]="getBannerStyles()">
+    <div class="px-4 sm:px-6 py-3 sm:py-4">
+        <div class="flex items-center justify-center gap-4 max-w-7xl mx-auto">
+            <div class="flex items-center gap-3 flex-1 min-w-0 justify-center">
+                <i [class]="bannerState().config!.icon + ' text-xl sm:text-2xl flex-shrink-0'"></i>
+                <div class="flex flex-col gap-1">
+                    <strong class="text-sm sm:text-base font-semibold">
+                        {{ bannerState().config!.title | translate }}
+                    </strong>
+                    <span class="text-xs sm:text-sm opacity-95">
+                        {{ bannerState().config!.message | translate }}
+                    </span>
+                </div>
+            </div>
+            <p-button
+                *ngIf="bannerState().config!.closable"
+                icon="pi pi-times"
+                [text]="true"
+                [rounded]="true"
+                severity="danger"
+                (onClick)="hide()"
+                [attr.aria-label]="'core.banner.close' | translate"
+                class="flex-shrink-0 text-white hover:bg-white/10"
+            >
+            </p-button>
+        </div>
+    </div>
+</div>

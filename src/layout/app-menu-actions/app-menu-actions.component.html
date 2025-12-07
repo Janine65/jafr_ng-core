@@ -1,0 +1,55 @@
+<div class="layout-config-menu flex align-items-center" [ngClass]="hideText ? 'gap-5' : 'gap-1'">
+    <!-- Environment Indicator -->
+    <div class="mr-6" id="menu-env-indicator">
+        <span
+            class="layout-topbar-action layout-topbar-env cursor-default select-none"
+            pTooltip="{{ envTooltip }}"
+            [escape]="false"
+            tooltipPosition="bottom"
+            tooltipClass="env-tooltip-auto-width"
+            tabindex="0"
+            role="button"
+            (click)="onEnvironmentIndicatorClick()"
+            (keydown.enter)="onEnvironmentIndicatorClick()"
+            (keydown.space)="onEnvironmentIndicatorClick()"
+        >
+            {{ stage | uppercase }}:{{ frontendVersion }}
+        </span>
+    </div>
+
+    <!-- Actions -->
+    <div id="menu-dark-mode">
+        <button type="button" class="layout-topbar-action p-link" (click)="toggleDarkMode()" [pTooltip]="'menu.darkMode' | translate" tooltipPosition="bottom">
+            <i [ngClass]="{ 'pi ': true, 'pi-moon': layoutService.isDarkTheme(), 'pi-sun': !layoutService.isDarkTheme() }"></i>
+            <span [ngClass]="hideText ? 'hidden' : 'ml-2'">{{ (layoutService.isDarkTheme() ? 'menu.darkMode' : 'menu.lightMode') | translate }}</span>
+        </button>
+    </div>
+    <div id="menu-language">
+        <button type="button" class="layout-topbar-action p-link" (click)="languagePopover.toggle($event)" [pTooltip]="'menu.language' | translate" tooltipPosition="bottom">
+            <i class="pi pi-language"></i>
+            <span [ngClass]="hideText ? 'hidden' : 'ml-2'">{{ 'menu.language' | translate }}</span>
+        </button>
+        <p-popover #languagePopover appendTo="body">
+            <div class="p-4" style="min-width: 12rem">
+                <app-language-switcher />
+            </div>
+        </p-popover>
+    </div>
+    <div id="menu-profile">
+        <button type="button" class="layout-topbar-action p-link" (click)="profilePopover.toggle($event)" [pTooltip]="'menu.profile' | translate" tooltipPosition="bottom">
+            <i class="pi pi-user"></i>
+            <span [ngClass]="hideText ? 'hidden' : 'ml-2'">{{ 'menu.profile' | translate }}</span>
+        </button>
+        <p-popover #profilePopover appendTo="body">
+            <div class="p-4" style="width: 20rem; max-width: 90vw">
+                <app-profile-menu></app-profile-menu>
+            </div>
+        </p-popover>
+    </div>
+    <div class="menu-container" id="menu-bug-report">
+        <button type="button" class="layout-topbar-action p-link" (click)="openBugReportDialog()" [pTooltip]="'menu.reportBug' | translate" tooltipPosition="bottom">
+            <app-icon-loader name="bug-report"></app-icon-loader>
+            <span [ngClass]="hideText ? 'hidden' : 'ml-2'">{{ 'menu.reportBug' | translate }}</span>
+        </button>
+    </div>
+</div>
