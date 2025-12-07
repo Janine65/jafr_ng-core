@@ -1,6 +1,6 @@
 /// <reference path="./types/keycloak-js.d.ts" />
 /**
- * @syrius/core - Core infrastructure library for Syrius Angular applications
+ * @frj/ng-core - Core infrastructure library for Syrius Angular applications
  *
  * This library provides reusable core infrastructure including:
  * - Authentication and authorization (Keycloak)

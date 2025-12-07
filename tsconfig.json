@@ -1,9 +1,9 @@
 {
     "compilerOptions": {
         "target": "ES2022",
-        "module": "ES2022",
+        "module": "NodeNext",
         "lib": ["ES2022", "DOM"],
-    "moduleResolution": "NodeNext",
+        "moduleResolution": "NodeNext",
         "declaration": true,
         "declarationMap": true,
         "sourceMap": true,
@@ -22,8 +22,8 @@
         "resolveJsonModule": true,
         "useDefineForClassFields": false,
         "paths": {
-            "@syrius/core": ["./src/public-api.ts"],
-            "@syrius/core/*": ["./src/*"],
+            "@frj/ng-core": ["./src/public-api.ts"],
+            "@frj/ng-core/*": ["./src/*"],
             "keycloak-js": ["./src/types/keycloak-js.d.ts"]
         }
     },

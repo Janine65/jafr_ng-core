@@ -4,7 +4,7 @@
  *
  * @example
  * // In your app.config.ts:
- * import { ROLES_CONFIG } from '@syrius/core';
+ * import { ROLES_CONFIG } from '@frj/ng-core';
  * import { ROLE_CONSTANTS, ROUTE_ROLE_MAPPINGS } from './app/config/roles.config';
  *
  * export const appConfig: ApplicationConfig = {

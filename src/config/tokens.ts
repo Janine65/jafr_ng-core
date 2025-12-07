@@ -4,9 +4,7 @@ import { AvailableStage } from '../interfaces/stage.interface';
 import { LayoutConfig } from '../layout/app.layout.service';
 import { DefaultRoleDataProvider, RoleDataProvider } from '../providers/role-provider.interface';
 // Version Data Provider Token
-import {
-    DefaultVersionDataProvider, VersionDataProvider
-} from '../providers/version-provider.interface';
+import { DefaultVersionDataProvider, VersionDataProvider } from '../providers/version-provider.interface';
 import { MenuItemWithRoles } from '../services/menu.service';
 import { AVAILABLE_STAGES } from './dev.config';
 import { menuStructure } from './menu.config';
@@ -19,7 +17,7 @@ import { DEFAULT_STYLE_CONFIG, SUVA_COLOR_PALETTE, SUVA_THEME_CONFIG } from './s
  *
  * @example
  * ```typescript
- * import { MENU_CONFIG } from '@syrius/core';
+ * import { MENU_CONFIG } from '@frj/ng-core';
  * import { menuStructure } from './app/config/menu.config';
  *
  * export const appConfig: ApplicationConfig = {
@@ -48,7 +46,7 @@ export interface RolesConfig {
  *
  * @example
  * ```typescript
- * import { ROLES_CONFIG } from '@syrius/core';
+ * import { ROLES_CONFIG } from '@frj/ng-core';
  * import { ROLE_CONSTANTS, ROUTE_ROLE_MAPPINGS } from './app/config/roles.config';
  *
  * export const appConfig: ApplicationConfig = {
@@ -69,7 +67,7 @@ export const ROLES_CONFIG = new InjectionToken<RolesConfig>('ROLES_CONFIG', {
  *
  * @example
  * ```typescript
- * import { STYLE_CONFIG } from '@syrius/core';
+ * import { STYLE_CONFIG } from '@frj/ng-core';
  * import { DEFAULT_STYLE_CONFIG } from './app/config/style.config';
  *
  * export const appConfig: ApplicationConfig = {
@@ -97,7 +95,7 @@ export interface DevConfig {
  *
  * @example
  * ```typescript
- * import { DEV_CONFIG } from '@syrius/core';
+ * import { DEV_CONFIG } from '@frj/ng-core';
  * import { AVAILABLE_STAGES } from './app/config/dev.config';
  *
  * export const appConfig: ApplicationConfig = {
@@ -118,7 +116,7 @@ export const DEV_CONFIG = new InjectionToken<DevConfig>('DEV_CONFIG', {
  *
  * @example
  * ```typescript
- * import { THEME_CONFIG } from '@syrius/core';
+ * import { THEME_CONFIG } from '@frj/ng-core';
  * import { SUVA_THEME_CONFIG } from './app/config/style.config';
  *
  * export const appConfig: ApplicationConfig = {

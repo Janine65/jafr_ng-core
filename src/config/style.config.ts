@@ -6,7 +6,7 @@ import { LayoutConfig } from '../layout/app.layout.service';
  *
  * @example
  * // In your app.config.ts:
- * import { STYLE_CONFIG } from '@syrius/core';
+ * import { STYLE_CONFIG } from '@frj/ng-core';
  * import { DEFAULT_STYLE_CONFIG } from './app/config/style.config';
  *
  * export const appConfig: ApplicationConfig = {

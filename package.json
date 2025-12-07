@@ -1,7 +1,7 @@
 {
-    "name": "@syrius/core",
+    "name": "@frj/ng-core",
     "version": "1.0.15",
-    "description": "Core infrastructure library for Syrius Angular applications",
+    "description": "Core infrastructure library for Angular applications",
     "type": "module",
     "main": "./dist/index.js",
     "types": "./dist/index.d.ts",
@@ -21,9 +21,9 @@
         "angular",
         "core",
         "infrastructure",
-        "syrius"
+        "frj"
     ],
-    "author": "Syrius Team",
+    "author": "Janine Franken",
     "license": "UNLICENSED",
     "publishConfig": {
         "registry": "http://swwnexusp0:18081/nexus/repository/sps-npm-hosted/",

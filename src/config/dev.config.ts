@@ -6,7 +6,7 @@ import { AvailableStage, Stage } from '../interfaces/stage.interface';
  *
  * @example
  * // In your app.config.ts:
- * import { DEV_CONFIG } from '@syrius/core';
+ * import { DEV_CONFIG } from '@frj/ng-core';
  * import { AVAILABLE_STAGES } from './app/config/dev.config';
  *
  * export const appConfig: ApplicationConfig = {

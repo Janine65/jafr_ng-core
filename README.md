@@ -1,6 +1,6 @@
-# @syrius/core
+# @frj/ng-core
 
-Core library for Syrius Angular applications.
+Core library for Angular applications.
 
 ## Features
 
@@ -16,7 +16,7 @@ Core library for Syrius Angular applications.
 
 ```bash
 # Clone the core library
-git clone ssh://git@git.suvanet.ch:7999/scsyrius-tools/syr-ui-core.git
+git clone https://github.com/Janine65/jafr_ng-core.git
 
 # Install dependencies
 pnpm install
@@ -26,26 +26,26 @@ pnpm link --global
 
 # In your app
 cd /home/<USER>/repos/<ANGULAR APP>
-pnpm link --global @syrius/core
+pnpm link --global @frj/ng-core
 ```
 
 ### For Production (NPM Package)
 
 ```bash
-pnpm install @syrius/core
+pnpm install @frj/ng-core
 ```
 
 ## Usage
 
 ```typescript
 // Import services
-import { AuthService, RolesService, AppMessageService } from '@syrius/core';
+import { AuthService, RolesService, AppMessageService } from '@frj/ng-core';
 
 // Import components
-import { AppLayout, BackendErrorBannerComponent } from '@syrius/core';
+import { AppLayout, BackendErrorBannerComponent } from '@frj/ng-core';
 
 // Import interceptors
-import { errorInterceptor, authInterceptor } from '@syrius/core';
+import { errorInterceptor, authInterceptor } from '@frj/ng-core';
 ```
 
 ## Project Structure
